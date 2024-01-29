@@ -40,20 +40,15 @@ def readFile():
         weights = [1, 1]
         return sum(w * row[col] for w, col in zip(weights, data[['b15g1','b15g2']]))
     data['b15'] = data.apply(weighted_averageb15, axis=1)
-    print(data.columns)
+    #print(data.columns)
     return data
 
 
-def columns():
+#将列名转换成数组
+def getColumnslist():
     data=readFile()
-    columns=data.columns
-
-
-def main():
-    columns()
-
-if __name__=="__main__":
-    main()
+    columns=[column for column in data]
+    return columns
 
 #计算各个因素的权重和e
 def calculation():
@@ -115,6 +110,11 @@ def calculation():
     print("intercept:", model.intercept_)
     print("coef:", model.coef_)
 
+def main():
+    calculation()
+
+if __name__=="__main__":
+    main()
 
 
 
