@@ -8,8 +8,8 @@ import numpy as np
 
 #读取学生数据集和家长数据集
 def readFile():
-    student,smeta=pr.read_sav("/Users/yuanruolan/Desktop/ceps数据/SPSS-CEPS基线（13-14）/Chinese/SPSS格式/CEPS基线调查学生数据.SAV")
-    parent,pmeta=pr.read_sav("/Users/yuanruolan/Desktop/ceps数据/SPSS-CEPS基线（13-14）/Chinese/SPSS格式/CEPS基线调查家长数据.SAV")
+    student,smeta=pr.read_sav("data/CEPS基线调查学生数据.SAV")
+    parent,pmeta=pr.read_sav("data/CEPS基线调查家长数据.SAV")
     student=pd.DataFrame(student)
     parent=pd.DataFrame(parent)
     #抽取目标列合并
