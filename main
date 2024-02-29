@@ -1,0 +1,10 @@
+import CognitiveAbility as cog
+
+
+
+
+def main():
+    cog.calculation()
+
+if __name__=="__main__":
+    main()

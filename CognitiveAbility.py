@@ -110,11 +110,7 @@ def calculation():
     print("intercept:", model.intercept_)
     print("coef:", model.coef_)
 
-def main():
-    calculation()
 
-if __name__=="__main__":
-    main()
 
 
 
