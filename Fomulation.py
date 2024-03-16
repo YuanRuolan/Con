@@ -1,2 +1,0 @@
-import CognitiveAbility as cog
-
